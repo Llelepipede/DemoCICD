@@ -10,7 +10,7 @@ pipeline {
         }
         stage('javadoc') {
             steps{
-                sh 'javadoc com.test'
+                sh 'mvn javadoc:javadoc'
             }
         }
         stage('Build') {
