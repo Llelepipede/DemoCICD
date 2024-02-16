@@ -10,7 +10,7 @@ pipeline {
         }
         stage('javadoc') {
             steps{
-                sh 'javadoc ./javadoc/test com.test'
+                sh 'javadoc'
             }
         }
         stage('Build') {
